@@ -1,0 +1,201 @@
+[EFX-0000 INFO] Efinix FPGA Synthesis.
+[EFX-0000 INFO] Version: 2019.3.272
+[EFX-0000 INFO] Compiled: Dec  9 2019.
+[EFX-0000 INFO] 
+[EFX-0000 INFO] Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
+
+INFO: ***** Beginning Analysis ... *****
+INFO: The default VHDL library search path is now "C:/Efinity/2019.3/sim_models/vhdl/packages/vhdl_2008" (VHDL-1504)
+-- Analyzing Verilog file 'C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/top.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v' (VERI-1482)
+INFO: Analysis took 0.0680825 seconds.
+INFO: 	Analysis took 0.068 seconds (approximately) in total CPU time.
+INFO: Analysis virtual memory usage: begin = 29.824 MB, end = 31.048 MB, delta = 1.224 MB
+INFO: 	Analysis peak virtual memory usage = 101.164 MB
+INFO: Analysis resident set memory usage: begin = 29.016 MB, end = 31.676 MB, delta = 2.66 MB
+INFO: 	Analysis peak resident set memory usage = 31.68 MB
+INFO: ***** Ending Analysis ... *****
+INFO: ***** Beginning Elaboration ... *****
+C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/top.v(12): INFO: compiling module 'top' (VERI-1018)
+C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/top.v(57): WARNING: expression size 32 truncated to fit in target size 31 (VERI-1209)
+C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v(102): WARNING: port 'probe1' remains unconnected for this instance (VERI-1927)
+C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v(10): INFO: compiling module 'edb_top' (VERI-1018)
+C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v(477): INFO: compiling module 'edb_la_top(INPUT_PIPE_STAGES=1,PROBE0_WIDTH=8)' (VERI-1018)
+C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v(176): INFO: compiling module 'adbg_crc32' (VERI-1018)
+C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v(2319): INFO: compiling module 'compare_unit(WIDTH=11'b01000,PIPE=1)' (VERI-1018)
+C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v(2465): WARNING: expression size 8 truncated to fit in target size 1 (VERI-1209)
+C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v(2468): WARNING: expression size 8 truncated to fit in target size 1 (VERI-1209)
+C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v(2471): WARNING: expression size 8 truncated to fit in target size 1 (VERI-1209)
+C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v(2474): WARNING: expression size 8 truncated to fit in target size 1 (VERI-1209)
+C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v(2534): INFO: compiling module 'trigger_unit(PIPE=1)' (VERI-1018)
+C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v(1865): INFO: compiling module 'la_biu(CAPTURE_WIDTH=8)' (VERI-1018)
+C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v(1749): INFO: compiling module 'fifo_with_read(DATA_WIDTH=8)' (VERI-1018)
+C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v(1784): WARNING: expression size 12 truncated to fit in target size 11 (VERI-1209)
+C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v(1793): WARNING: expression size 12 truncated to fit in target size 11 (VERI-1209)
+C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v(384): INFO: compiling module 'simple_dual_port_ram(ADDR_WIDTH=10,RAM_INIT_FILE="")' (VERI-1018)
+C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v(906): WARNING: net 'burst_write' does not have a driver (VDB-1002)
+C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v(953): WARNING: net 'register_conn[2][63]' does not have a driver (VDB-1002)
+C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v(254): INFO: compiling module 'debug_hub' (VERI-1018)
+C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v(81): WARNING: input port 'probe1[0]' is not connected on this instance (VDB-1013)
+C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/top.v(79): WARNING: actual bit length 9 differs from formal bit length 8 for port 'la0_probe0' (VERI-1330)
+INFO: Elaboration took 2.94537 seconds.
+INFO: 	Elaboration took 2.945 seconds (approximately) in total CPU time.
+INFO: Elaboration virtual memory usage: begin = 31.048 MB, end = 628.472 MB, delta = 597.424 MB
+INFO: 	Elaboration peak virtual memory usage = 648.568 MB
+INFO: Elaboration resident set memory usage: begin = 31.688 MB, end = 611.416 MB, delta = 579.728 MB
+INFO: 	Elaboration peak resident set memory usage = 628.876 MB
+INFO: ***** Ending Elaboration ... *****
+[EFX-0000 INFO] Setting Synthesis Option: mode=speed
+INFO: ***** Beginning Reading Mapping Library ... *****
+-- Analyzing Verilog file 'C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v' (VERI-1482)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(6): INFO: compiling module 'EFX_ADD' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(19): INFO: compiling module 'EFX_FF' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(36): INFO: compiling module 'EFX_GBUFCE' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(45): INFO: compiling module 'EFX_IDDR' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(59): INFO: compiling module 'EFX_ODDR' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(75): INFO: compiling module 'EFX_IOBUF' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(87): INFO: compiling module 'EFX_LUT4' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(95): INFO: compiling module 'EFX_MULT' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(130): INFO: compiling module 'EFX_RAM_4K' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(190): INFO: compiling module 'EFX_RAM_5K' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(262): INFO: compiling module 'EFX_DPRAM_5K' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(367): INFO: compiling module 'RAMB5' (VERI-1018)
+C:/Efinity/2019.3/sim_models/maplib/efinix_maplib.v(429): INFO: compiling module 'EFX_RAM_10K' (VERI-1018)
+INFO: Reading Mapping Library took 0.0084308 seconds.
+INFO: 	Reading Mapping Library took 0.008 seconds (approximately) in total CPU time.
+INFO: Reading Mapping Library virtual memory usage: begin = 628.48 MB, end = 628.48 MB, delta = 0 MB
+INFO: 	Reading Mapping Library peak virtual memory usage = 648.568 MB
+INFO: Reading Mapping Library resident set memory usage: begin = 611.592 MB, end = 611.6 MB, delta = 0.008 MB
+INFO: 	Reading Mapping Library peak resident set memory usage = 628.876 MB
+INFO: ***** Ending Reading Mapping Library ... *****
+[EFX-0000 INFO] ... Pre-synthesis checks begin
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 2323) Removing unconnected net : resetn
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 2542) Removing unconnected net : resetn
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 2546) Removing unconnected net : trigger_in
+[EFX-0677 INFO] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 399) Zero initialization of uninitialized memory block 'ram'.
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 1882) Removing unconnected net : rd_i
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 1894) Removing unconnected net : trig_out
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 1895) Removing unconnected net : trig_out_ack
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 623) Removing unconnected net : bscan_DRCK
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 625) Removing unconnected net : bscan_RUNTEST
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 626) Removing unconnected net : bscan_SEL
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 630) Removing unconnected net : bscan_TMS
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 641) Removing unconnected net : trig_in_ack
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 646) Removing unconnected net : probe1[0]
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 647) Removing unconnected net : probe2[0]
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 648) Removing unconnected net : probe3[0]
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 649) Removing unconnected net : probe4[0]
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 650) Removing unconnected net : probe5[0]
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 651) Removing unconnected net : probe6[0]
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 652) Removing unconnected net : probe7[0]
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 653) Removing unconnected net : probe8[0]
+[EFX-0200 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 654) Removing unconnected net : probe9[0]
+[EFX-0201 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 906) Re-wiring to GND non-driven net 'burst_write'.
+[EFX-0201 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 953) Re-wiring to GND non-driven net 'register_conn[2][63]'.
+[EFX-0201 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 953) Re-wiring to GND non-driven net 'register_conn[2][62]'.
+[EFX-0201 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 953) Re-wiring to GND non-driven net 'register_conn[2][61]'.
+[EFX-0201 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 953) Re-wiring to GND non-driven net 'register_conn[2][60]'.
+[EFX-0201 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 953) Re-wiring to GND non-driven net 'register_conn[2][59]'.
+[EFX-0201 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 953) Re-wiring to GND non-driven net 'register_conn[2][58]'.
+[EFX-0201 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 953) Re-wiring to GND non-driven net 'register_conn[2][57]'.
+[EFX-0201 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 953) Re-wiring to GND non-driven net 'register_conn[2][56]'.
+[EFX-0201 WARNING] (C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v 953) Re-wiring to GND non-driven net 'register_conn[2][55]'.
+[EFX-0200 WARNING] The above message was generated too many times, subsequent similar messages will be muted.
+[EFX-0201 WARNING] The above message was generated too many times, subsequent similar messages will be muted.
+[EFX-0266 WARNING] Module Instance 'la0' input pin tied to constant (trig_in=0).
+[EFX-0266 WARNING] Module Instance 'la0' input pin tied to constant (trig_out_ack=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[1]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[2]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[3]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[4]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[5]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[6]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[7]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[8]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[9]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[10]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[11]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[12]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[13]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_inhibit[14]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[1]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[2]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[3]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[4]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[5]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[6]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[7]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[8]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[9]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[10]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[11]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[12]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[13]=0).
+[EFX-0266 WARNING] Module Instance 'debug_hub_inst' input pin tied to constant (edb_module_tdo[14]=0).
+[EFX-0000 INFO] ... Pre-synthesis checks end (Real time : 2s)
+[EFX-0000 INFO] ... NameSpace init begin
+[EFX-0000 INFO] ... NameSpace init end (Real time : 0s)
+[EFX-0000 INFO] ... Mapping design "top"
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "adbg_crc32" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "adbg_crc32" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b01000,PIPE=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "compare_unit(WIDTH=11'b01000,PIPE=1)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "trigger_unit(PIPE=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "trigger_unit(PIPE=1)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "simple_dual_port_ram(ADDR_WIDTH=10,RAM_INIT_FILE="")" begin
+[EFX-0000 INFO] ... Clocked Read Port Synthesis for ram net: ram
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "simple_dual_port_ram(ADDR_WIDTH=10,RAM_INIT_FILE="")" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "fifo_with_read(DATA_WIDTH=8)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "fifo_with_read(DATA_WIDTH=8)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "la_biu(CAPTURE_WIDTH=8)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "la_biu(CAPTURE_WIDTH=8)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_la_top(INPUT_PIPE_STAGES=1,PROBE0_WIDTH=8)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_la_top(INPUT_PIPE_STAGES=1,PROBE0_WIDTH=8)" end (Real time : 13s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "debug_hub" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "debug_hub" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_top" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "edb_top" end (Real time : 2s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "top" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "top" end (Real time : 1s)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s)
+[EFX-0000 INFO] ... Flat synthesis begin
+[EFX-0000 INFO] ... Flat synthesis end (Real time : 0s)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s)
+[EFX-0000 INFO] ... Check and break combinational loops begin
+[EFX-0000 INFO] ... Check and break combinational loops end (Real time : 0s)
+[EFX-0000 INFO] ... Top level netlist RUSHC IOs pre-synthesis begin
+[EFX-0000 INFO] ... SOP modeling begin
+[EFX-0000 INFO] ... SOP modeling end (Real time : 0s)
+[EFX-0000 INFO] ... LUT mapping begin
+[EFX-0000 INFO] ... LS, strategy: 3, nd: 593, ed: 1986, lv: 6
+[EFX-0000 INFO] ... LUT mapping end (Real time : 3s)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation end (Real time : 0s)
+[EFX-0000 INFO] ... Top level netlist RUSHC IOs pre-synthesis end (Real time : 3s)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing end (Real time : 0s)
+INFO: ***** Beginning VDB Netlist Checker ... *****
+WARNING: Input/Inout Port bscan_DRCK is unconnected and will be removed
+WARNING: Input/Inout Port bscan_RUNTEST is unconnected and will be removed
+WARNING: Input/Inout Port bscan_TMS is unconnected and will be removed
+WARNING: Input/Inout Port raspi_gpiox8[7] is unconnected and will be removed
+INFO: Found 4 warnings in the post-synthesis netlist.
+INFO: VDB Netlist Checker took 0.599632 seconds.
+INFO: 	VDB Netlist Checker took 0.599 seconds (approximately) in total CPU time.
+INFO: VDB Netlist Checker virtual memory usage: begin = 1572.99 MB, end = 1572.99 MB, delta = 0 MB
+INFO: 	VDB Netlist Checker peak virtual memory usage = 2042.68 MB
+INFO: VDB Netlist Checker resident set memory usage: begin = 1483.31 MB, end = 1483.36 MB, delta = 0.052 MB
+INFO: 	VDB Netlist Checker peak resident set memory usage = 1973.98 MB
+INFO: ***** Ending VDB Netlist Checker ... *****
+-- Writing netlist 'top' to Verilog file 'C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/outflow/DEMO.map.v' (VDB-1030)
+[EFX-0000 INFO] Resource Summary 
+[EFX-0000 INFO] =============================== 
+[EFX-0000 INFO] EFX_ADD         : 	137
+[EFX-0000 INFO] EFX_LUT4        : 	579
+[EFX-0000 INFO] EFX_FF          : 	633
+[EFX-0000 INFO] EFX_RAM_5K      : 	2
+[EFX-0000 INFO] EFX_GBUFCE      : 	2
+[EFX-0000 INFO] =============================== 

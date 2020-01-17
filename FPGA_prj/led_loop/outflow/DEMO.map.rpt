@@ -1,0 +1,181 @@
+Synthesis report for project DEMO
+Date : Jan 3 2020  13:1:53
+Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
+
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
+
+Top-level Entity Name : top
+### ### File List (begin) ### ### ###
+C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/top.v (verilog_2k)
+C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v (verilog_2k)
+### ### File List (end) ### ### ###
+
+### ### Pre-optimizations and mapping (begin) ### ### ###
+"MEM|SYN-0677" : Zero initialization of uninitialized memory block 'ram'."
+@ C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/debug_top.v (399)"
+
+Mapping success.
+### ### Mapping (end) ### ### ###
+
+### ### Post-optimizations and re-synthesis (begin) ### ### ###
+
+Post-optimizations and re-synthesis success.
+### ### Post-optimizations and re-synthesis (end) ### ### ###
+
+### ### EFX_FF CE enables (begin) ### ### ###
+Total number of enable signals: 24
+Enable signal <n969>, number of controlling flip flops: 1
+Enable signal <vcc>, number of controlling flip flops: 107
+Enable signal <n975>, number of controlling flip flops: 3
+Enable signal <n978>, number of controlling flip flops: 19
+Enable signal <n982>, number of controlling flip flops: 64
+Enable signal <n984>, number of controlling flip flops: 25
+Enable signal <n990>, number of controlling flip flops: 4
+Enable signal <n992>, number of controlling flip flops: 6
+Enable signal <n995>, number of controlling flip flops: 16
+Enable signal <n997>, number of controlling flip flops: 64
+Enable signal <n1001>, number of controlling flip flops: 3
+Enable signal <n1002>, number of controlling flip flops: 64
+Enable signal <n1003>, number of controlling flip flops: 64
+Enable signal <n1008>, number of controlling flip flops: 13
+Enable signal <n1192>, number of controlling flip flops: 32
+Enable signal <n1283>, number of controlling flip flops: 17
+Enable signal <n1292>, number of controlling flip flops: 11
+Enable signal <n1298>, number of controlling flip flops: 9
+Enable signal <n1310>, number of controlling flip flops: 2
+Enable signal <n1313>, number of controlling flip flops: 1
+Enable signal <n1335>, number of controlling flip flops: 11
+Enable signal <edb_top/la0/la_biu_inst/fifo_with_read_inst/we>, number of controlling flip flops: 11
+Enable signal <n1514>, number of controlling flip flops: 4
+Enable signal <n1517>, number of controlling flip flops: 82
+### ### EFX FF CE enables (end) ### ### ###
+
+### ### Sequential Elements Trimming Report (begin) ### ### ### 
+FF Output: edb_top/la0/data_from_biu[8](=1)
+FF Output: edb_top/la0/data_from_biu[9](=1)
+FF Output: edb_top/la0/data_from_biu[10](=1)
+FF Output: edb_top/la0/data_from_biu[11](=1)
+FF Output: edb_top/la0/data_from_biu[12](=1)
+FF Output: edb_top/la0/data_from_biu[13](=1)
+FF Output: edb_top/la0/data_from_biu[14](=1)
+FF Output: edb_top/la0/data_from_biu[15](=1)
+FF Output: edb_top/la0/data_from_biu[16](=1)
+FF Output: edb_top/la0/data_from_biu[17](=1)
+FF Output: edb_top/la0/data_from_biu[18](=1)
+FF Output: edb_top/la0/data_from_biu[19](=1)
+FF Output: edb_top/la0/data_from_biu[20](=1)
+FF Output: edb_top/la0/data_from_biu[21](=1)
+FF Output: edb_top/la0/data_from_biu[22](=1)
+FF Output: edb_top/la0/data_from_biu[23](=1)
+FF Output: edb_top/la0/data_from_biu[24](=1)
+FF Output: edb_top/la0/data_from_biu[25](=1)
+FF Output: edb_top/la0/data_from_biu[26](=1)
+FF Output: edb_top/la0/data_from_biu[27](=1)
+FF Output: edb_top/la0/data_from_biu[28](=1)
+FF Output: edb_top/la0/data_from_biu[29](=1)
+FF Output: edb_top/la0/data_from_biu[30](=1)
+FF Output: edb_top/la0/data_from_biu[31](=1)
+FF Output: edb_top/la0/data_from_biu[32](=1)
+FF Output: edb_top/la0/data_from_biu[33](=1)
+FF Output: edb_top/la0/data_from_biu[34](=1)
+FF Output: edb_top/la0/data_from_biu[35](=1)
+FF Output: edb_top/la0/data_from_biu[36](=1)
+FF Output: edb_top/la0/data_from_biu[37](=1)
+FF Output: edb_top/la0/data_from_biu[38](=1)
+FF Output: edb_top/la0/data_from_biu[39](=1)
+FF Output: edb_top/la0/data_from_biu[40](=1)
+FF Output: edb_top/la0/data_from_biu[41](=1)
+FF Output: edb_top/la0/data_from_biu[42](=1)
+FF Output: edb_top/la0/data_from_biu[43](=1)
+FF Output: edb_top/la0/data_from_biu[44](=1)
+FF Output: edb_top/la0/data_from_biu[45](=1)
+FF Output: edb_top/la0/data_from_biu[46](=1)
+FF Output: edb_top/la0/data_from_biu[47](=1)
+FF Output: edb_top/la0/data_from_biu[48](=1)
+FF Output: edb_top/la0/data_from_biu[49](=1)
+FF Output: edb_top/la0/data_from_biu[50](=1)
+FF Output: edb_top/la0/data_from_biu[51](=1)
+FF Output: edb_top/la0/data_from_biu[52](=1)
+FF Output: edb_top/la0/data_from_biu[53](=1)
+FF Output: edb_top/la0/data_from_biu[54](=1)
+FF Output: edb_top/la0/data_from_biu[55](=1)
+FF Output: edb_top/la0/data_from_biu[56](=1)
+FF Output: edb_top/la0/data_from_biu[57](=1)
+FF Output: edb_top/la0/data_from_biu[58](=1)
+FF Output: edb_top/la0/data_from_biu[59](=1)
+FF Output: edb_top/la0/data_from_biu[60](=1)
+FF Output: edb_top/la0/data_from_biu[61](=1)
+FF Output: edb_top/la0/data_from_biu[62](=1)
+FF Output: edb_top/la0/data_from_biu[63](=1)
+FF instance: edb_top/la0/address_counter[25]~FF(unreachable)
+FF instance: edb_top/la0/address_counter[26]~FF(unreachable)
+FF instance: edb_top/la0/address_counter[27]~FF(unreachable)
+FF instance: edb_top/la0/address_counter[28]~FF(unreachable)
+FF instance: edb_top/la0/address_counter[29]~FF(unreachable)
+FF instance: edb_top/la0/address_counter[30]~FF(unreachable)
+FF instance: edb_top/la0/address_counter[31]~FF(unreachable)
+### ### Sequential Elements Trimming Report (end) ### ### ### 
+
+### ### Module Resource Usage Distribution Estimates (begin) ### ###
+
+**Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module                                                               FFs        ADDs        LUTs      RAMs     MULTs
+------------------------------------------------------------         ---        ----        ----      ----     -----
+top:top                                                          633(32)     137(30)     579(11)      2(0)      0(0)
++edb_top:edb_top                                                  601(0)      107(0)      568(0)      2(0)      0(0)
+ +la0:edb_la_top(INPUT_PIPE_STAGES=1,PROBE0_WIDTH=8)            515(383)     102(56)    552(387)      2(0)      0(0)
+  +axi_crc_i:adbg_crc32                                           32(32)        0(0)      55(55)      0(0)      0(0)
+                    +compare_unit(WIDTH=11'b01000,PIPE=1)...      21(21)        0(0)      26(26)      0(0)      0(0)
+  +trigger_unit_inst:trigger_unit(PIPE=1)                           1(1)        0(0)        2(2)      0(0)      0(0)
+  +la_biu_inst:la_biu(CAPTURE_WIDTH=8)                            78(56)      46(16)      82(61)      2(0)      0(0)
+   +fifo_with_read_inst:fifo_with_read(DATA_WIDTH=8)              22(22)      30(30)      21(21)      2(0)      0(0)
+    +simple_dual_port_ram(ADDR_WIDTH=10,RAM_INIT_FILE="")...        0(0)        0(0)        0(0)      2(2)      0(0)
+ +debug_hub_inst:debug_hub                                        86(86)        5(5)      16(16)      0(0)      0(0)
+
+### ### Module Resource Usage Distribution Estimates (end) ### ###
+
+### ### Clock Load Distribution Report (begin) ### ###
+
+     Clock     Flip-Flops   Memory Ports    Multipliers
+     -----     ----------   ------------    -----------
+       clk            151              4              0
+ bscan_TCK            482              0              0
+
+### ### Clock Load Distribution Report (end) ### ###
+
+### ### EFX Flow Options (begin) ### ### ###
+
+family : Trion
+device : T20F169
+project : DEMO
+root : top
+I : C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop
+output-dir : C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/outflow
+work-dir : C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/work_syn
+write-efx-verilog : C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/outflow/DEMO.map.v
+binary-db : C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/DEMO.vdb
+insert-ios : 0
+num_mult18 : -1
+num_ram_5k : -1
+syn_options : mode=speed
+veri_options : verilog_mode=verilog_2k,vhdl_mode=vhdl_2008
+
+### ### EFX Flow Options (end) ### ### ###
+
+### ### Resource Summary (begin) ### ### ### 
+INPUT  PORTS    : 	23
+OUTPUT PORTS    : 	5
+
+EFX_ADD         : 	137
+EFX_LUT4        : 	579
+   1-2  Inputs  : 	91
+   3    Inputs  : 	190
+   4    Inputs  : 	298
+EFX_FF          : 	633
+EFX_RAM_5K      : 	2
+EFX_GBUFCE      : 	2
+### ### Resource Summary (end) ### ### ###
+
+Plain synthesis (without verilog dump and post-map checks) time : 20s
+Elapsed synthesis time : 26s

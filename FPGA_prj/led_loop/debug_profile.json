@@ -1,0 +1,18 @@
+{
+    "debug_cores": [
+        {
+            "probes": [
+                {
+                    "name": "probe0",
+                    "probe_type": 1,
+                    "width": 8
+                }
+            ],
+            "name": "la0",
+            "trigin_en": false,
+            "trigout_en": false,
+            "data_depth": 1024,
+            "type": "la"
+        }
+    ]
+}

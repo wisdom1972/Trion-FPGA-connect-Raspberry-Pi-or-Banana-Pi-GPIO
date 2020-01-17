@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<efxpt:design_db name="DEMO" device_def="T20F169" location="C:\Efinity\2019.3\project\demo_led_loop\FPGA_prj\led_loop" version="2019.3.272" db_version="20193999" last_change_date="Thu Jan  2 16:30:38 2020" xmlns:efxpt="http://www.efinixinc.com/peri_design_db" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/peri_design_db peri_design_db.xsd ">
+    <efxpt:device_info>
+        <efxpt:iobank_info>
+            <efxpt:iobank name="1A" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="1B_1C_1D" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="1E" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="2A" iostd="1.2 V"/>
+            <efxpt:iobank name="2B" iostd="1.2 V"/>
+            <efxpt:iobank name="3A_3B" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="3C_3D_3E" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="4A" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="4B" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="BR_CORNER" iostd="1.2 V"/>
+            <efxpt:iobank name="TL_CORNER" iostd="1.2 V"/>
+            <efxpt:iobank name="TR_CORNER" iostd="1.2 V"/>
+        </efxpt:iobank_info>
+        <efxpt:ctrl_info>
+            <efxpt:ctrl name="cfg" ctrl_def="CONFIG_CTRL0" clock_name="" is_clk_invert="false" cbsel_bus_name="cfg_CBSEL" config_ctrl_name="cfg_CONFIG" ena_capture_name="cfg_ENA" error_status_name="cfg_ERROR" um_signal_status_name="cfg_USR_STATUS" is_remote_update_enable="false" is_user_mode_enable="false"/>
+        </efxpt:ctrl_info>
+    </efxpt:device_info>
+    <efxpt:gpio_info device_def="T20F169">
+        <efxpt:gpio name="butten_i" gpio_def="GPIOL_12" mode="input" bus_name="" is_lvds_gpio="false">
+            <efxpt:input_config name="butten_i" name_ddio_lo="" conn_type="normal" is_register="false" clock_name="" is_clock_inverted="false" pull_option="none" is_schmitt_trigger="false" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="butten_o" gpio_def="GPIOR_120" mode="output" bus_name="" is_lvds_gpio="false">
+            <efxpt:output_config name="butten_o" name_ddio_lo="" register_option="none" clock_name="" is_clock_inverted="false" drive_strength="1" is_slew_rate="false" tied_option="none" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="freq_1sec_o" gpio_def="GPIOR_121" mode="output" bus_name="" is_lvds_gpio="false">
+            <efxpt:output_config name="freq_1sec_o" name_ddio_lo="" register_option="none" clock_name="" is_clock_inverted="false" drive_strength="1" is_slew_rate="false" tied_option="none" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="led0_o" gpio_def="GPIOL_21" mode="output" bus_name="" is_lvds_gpio="false">
+            <efxpt:output_config name="led0_o" name_ddio_lo="" register_option="none" clock_name="" is_clock_inverted="false" drive_strength="1" is_slew_rate="false" tied_option="none" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="led1_o" gpio_def="GPIOL_20" mode="output" bus_name="" is_lvds_gpio="false">
+            <efxpt:output_config name="led1_o" name_ddio_lo="" register_option="none" clock_name="" is_clock_inverted="false" drive_strength="1" is_slew_rate="false" tied_option="none" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="pll_in" gpio_def="GPIOR_76" mode="input" bus_name="" is_lvds_gpio="false">
+            <efxpt:input_config name="pll_in" name_ddio_lo="" conn_type="alternate" is_register="false" clock_name="" is_clock_inverted="false" pull_option="none" is_schmitt_trigger="false" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="rasp0_i" gpio_def="GPIOR_151" mode="input" bus_name="" is_lvds_gpio="false">
+            <efxpt:input_config name="rasp0_i" name_ddio_lo="" conn_type="normal" is_register="false" clock_name="" is_clock_inverted="false" pull_option="none" is_schmitt_trigger="false" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="rasp1_i" gpio_def="GPIOR_150" mode="input" bus_name="" is_lvds_gpio="false">
+            <efxpt:input_config name="rasp1_i" name_ddio_lo="" conn_type="normal" is_register="false" clock_name="" is_clock_inverted="false" pull_option="none" is_schmitt_trigger="false" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="raspi_gpiox8[0]" gpio_def="GPIOB_TXP06" mode="input" bus_name="raspi_gpiox8" is_lvds_gpio="true">
+            <efxpt:input_config name="raspi_gpiox8[0]" name_ddio_lo="" conn_type="normal" is_register="false" clock_name="" is_clock_inverted="false" pull_option="none" is_schmitt_trigger="false" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="raspi_gpiox8[1]" gpio_def="GPIOB_TXP09" mode="input" bus_name="raspi_gpiox8" is_lvds_gpio="true">
+            <efxpt:input_config name="raspi_gpiox8[1]" name_ddio_lo="" conn_type="normal" is_register="false" clock_name="" is_clock_inverted="false" pull_option="none" is_schmitt_trigger="false" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="raspi_gpiox8[2]" gpio_def="GPIOB_TXN09" mode="input" bus_name="raspi_gpiox8" is_lvds_gpio="true">
+            <efxpt:input_config name="raspi_gpiox8[2]" name_ddio_lo="" conn_type="normal" is_register="false" clock_name="" is_clock_inverted="false" pull_option="none" is_schmitt_trigger="false" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="raspi_gpiox8[3]" gpio_def="GPIOB_TXN06" mode="input" bus_name="raspi_gpiox8" is_lvds_gpio="true">
+            <efxpt:input_config name="raspi_gpiox8[3]" name_ddio_lo="" conn_type="normal" is_register="false" clock_name="" is_clock_inverted="false" pull_option="none" is_schmitt_trigger="false" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="raspi_gpiox8[4]" gpio_def="GPIOB_TXP08" mode="input" bus_name="raspi_gpiox8" is_lvds_gpio="true">
+            <efxpt:input_config name="raspi_gpiox8[4]" name_ddio_lo="" conn_type="normal" is_register="false" clock_name="" is_clock_inverted="false" pull_option="none" is_schmitt_trigger="false" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="raspi_gpiox8[5]" gpio_def="GPIOB_TXN08" mode="input" bus_name="raspi_gpiox8" is_lvds_gpio="true">
+            <efxpt:input_config name="raspi_gpiox8[5]" name_ddio_lo="" conn_type="normal" is_register="false" clock_name="" is_clock_inverted="false" pull_option="none" is_schmitt_trigger="false" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="raspi_gpiox8[6]" gpio_def="GPIOB_RXN04" mode="input" bus_name="raspi_gpiox8" is_lvds_gpio="true">
+            <efxpt:input_config name="raspi_gpiox8[6]" name_ddio_lo="" conn_type="normal" is_register="false" clock_name="" is_clock_inverted="false" pull_option="none" is_schmitt_trigger="false" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="raspi_gpiox8[7]" gpio_def="GPIOR_157" mode="input" bus_name="raspi_gpiox8" is_lvds_gpio="false">
+            <efxpt:input_config name="raspi_gpiox8[7]" name_ddio_lo="" conn_type="normal" is_register="false" clock_name="" is_clock_inverted="false" pull_option="none" is_schmitt_trigger="false" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:global_unused_config state="input with weak pullup"/>
+        <efxpt:bus name="raspi_gpiox8" mode="input" msb="7" lsb="0"/>
+    </efxpt:gpio_info>
+    <efxpt:pll_info>
+        <efxpt:pll name="pll_inst1" pll_def="PLL_TR0" ref_clock_name="" ref_clock_freq="50.00" multiplier="30" pre_divider="1" post_divider="1" reset_name="" locked_name="lock" is_ipfrz="false" is_bypass_lock="true">
+            <efxpt:output_clock name="clk" number="0" out_divider="60" adv_out_phase_shift="0"/>
+            <efxpt:adv_prop ref_clock_mode="external" ref_clock1_name="" ext_ref_clock_id="2" clksel_name="" feedback_clock_name="clk" feedback_mode="internal"/>
+        </efxpt:pll>
+    </efxpt:pll_info>
+    <efxpt:lvds_info/>
+    <efxpt:mipi_info/>
+    <efxpt:jtag_info>
+        <efxpt:jtag name="jtag_inst1" jtag_def="JTAG_USER1">
+            <efxpt:gen_pin>
+                <efxpt:pin name="bscan_RUNTEST" type_name="RUNTEST" is_bus="false"/>
+                <efxpt:pin name="bscan_TCK" type_name="TCK" is_bus="false"/>
+                <efxpt:pin name="bscan_TDI" type_name="TDI" is_bus="false"/>
+                <efxpt:pin name="bscan_CAPTURE" type_name="CAPTURE" is_bus="false"/>
+                <efxpt:pin name="bscan_UPDATE" type_name="UPDATE" is_bus="false"/>
+                <efxpt:pin name="bscan_TMS" type_name="TMS" is_bus="false"/>
+                <efxpt:pin name="bscan_SHIFT" type_name="SHIFT" is_bus="false"/>
+                <efxpt:pin name="bscan_SEL" type_name="SEL" is_bus="false"/>
+                <efxpt:pin name="bscan_TDO" type_name="TDO" is_bus="false"/>
+                <efxpt:pin name="bscan_DRCK" type_name="DRCK" is_bus="false"/>
+                <efxpt:pin name="bscan_RESET" type_name="RESET" is_bus="false"/>
+            </efxpt:gen_pin>
+        </efxpt:jtag>
+    </efxpt:jtag_info>
+</efxpt:design_db>

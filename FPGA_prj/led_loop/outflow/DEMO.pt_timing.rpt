@@ -1,0 +1,82 @@
+
+Efinity Interface Designer Timing Report
+Version: 2019.3.272
+Date: 2020-01-03 13:02
+
+Copyright (C) 2017 - 2019 Efinix Inc. All rights reserved.
+
+Device: T20F169
+Project: DEMO
+Timing Model: C4 (final)
+
+---------- 1. PLL Timing Report (begin) ----------
+
++-------+-------------+-----------------------+
+| Clock | Period (ns) | Phase Shift (degrees) |
++-------+-------------+-----------------------+
+|  clk  |    40.00    |           0           |
++-------+-------------+-----------------------+
+
+---------- PLL Timing Report (end) ----------
+
+---------- 2. GPIO Timing Report (begin) ----------
+
+Non-registered GPIO Configuration:
+===================================
+
++-----------------+-----------------+-----------+----------+----------+
+|  Instance Name  |     Pin Name    | Parameter | Max (ns) | Min (ns) |
++-----------------+-----------------+-----------+----------+----------+
+|     butten_i    |     butten_i    |  GPIO_IN  |  1.396   |  0.698   |
+|     rasp0_i     |     rasp0_i     |  GPIO_IN  |  1.396   |  0.698   |
+|     rasp1_i     |     rasp1_i     |  GPIO_IN  |  1.396   |  0.698   |
+| raspi_gpiox8[7] | raspi_gpiox8[7] |  GPIO_IN  |  1.396   |  0.698   |
+|     butten_o    |     butten_o    |  GPIO_OUT |  3.829   |  1.915   |
+|   freq_1sec_o   |   freq_1sec_o   |  GPIO_OUT |  3.829   |  1.915   |
+|      led0_o     |      led0_o     |  GPIO_OUT |  3.829   |  1.915   |
+|      led1_o     |      led1_o     |  GPIO_OUT |  3.829   |  1.915   |
++-----------------+-----------------+-----------+----------+----------+
+
+---------- GPIO Timing Report (end) ----------
+
+---------- 3. LVDS Rx Timing Report (begin) ----------
+
+Non-registered LVDS GPIO Configuration:
+========================================
+
++-----------------+-----------------+-----------+----------+----------+
+|  Instance Name  |     Pin Name    | Parameter | Max (ns) | Min (ns) |
++-----------------+-----------------+-----------+----------+----------+
+| raspi_gpiox8[6] | raspi_gpiox8[6] |  GPIO_IN  |  0.000   |  0.000   |
++-----------------+-----------------+-----------+----------+----------+
+
+---------- LVDS Rx Timing Report (end) ----------
+
+---------- 4. LVDS Tx Timing Report (begin) ----------
+
+Non-registered LVDS GPIO Configuration:
+========================================
+
++-----------------+-----------------+-----------+----------+----------+
+|  Instance Name  |     Pin Name    | Parameter | Max (ns) | Min (ns) |
++-----------------+-----------------+-----------+----------+----------+
+| raspi_gpiox8[0] | raspi_gpiox8[0] |  GPIO_IN  |  1.467   |  0.734   |
+| raspi_gpiox8[1] | raspi_gpiox8[1] |  GPIO_IN  |  1.467   |  0.734   |
+| raspi_gpiox8[2] | raspi_gpiox8[2] |  GPIO_IN  |  1.467   |  0.734   |
+| raspi_gpiox8[3] | raspi_gpiox8[3] |  GPIO_IN  |  1.467   |  0.734   |
+| raspi_gpiox8[4] | raspi_gpiox8[4] |  GPIO_IN  |  1.467   |  0.734   |
+| raspi_gpiox8[5] | raspi_gpiox8[5] |  GPIO_IN  |  1.467   |  0.734   |
++-----------------+-----------------+-----------+----------+----------+
+
+---------- LVDS Tx Timing Report (end) ----------
+
+---------- 5. JTAG Timing Report (begin) ----------
+
++---------------+-----------+-----------+----------+----------+
+| Instance Name |  Pin Name | Parameter | Max (ns) | Min (ns) |
++---------------+-----------+-----------+----------+----------+
+|   jtag_inst1  | bscan_TDI |  JTAG_IN  |  2.415   |  1.208   |
+|   jtag_inst1  | bscan_TMS |  JTAG_IN  |  1.755   |  0.877   |
++---------------+-----------+-----------+----------+----------+
+
+---------- JTAG Timing Report (end) ----------

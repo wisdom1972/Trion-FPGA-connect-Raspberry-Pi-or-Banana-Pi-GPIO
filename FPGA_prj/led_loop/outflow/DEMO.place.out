@@ -1,0 +1,219 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2019.3.272 
+Compiled: Dec  9 2019.
+
+Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Trion", Device "T20F169" ...
+
+***** Beginning stage netlist pre-processing ... *****
+Successfully Read in Verific binary Netlist dump file "C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/DEMO.vdb".
+***** Beginning VDB Netlist Checker ... *****
+VDB Netlist Checker took 0.60562 seconds.
+	VDB Netlist Checker took 0.606 seconds (approximately) in total CPU time.
+VDB Netlist Checker virtual memory usage: begin = 15.352 MB, end = 15.36 MB, delta = 0.008 MB
+	VDB Netlist Checker peak virtual memory usage = 73.748 MB
+VDB Netlist Checker resident set memory usage: begin = 22.18 MB, end = 22.384 MB, delta = 0.204 MB
+	VDB Netlist Checker peak resident set memory usage = 55.608 MB
+***** Ending VDB Netlist Checker ... *****
+Reading core interface constraints from 'C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/outflow/DEMO.interface.csv'.
+Successfully processed interface constraints file "C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/outflow/DEMO.interface.csv".
+Found 0 constant generator nets.
+Pass 0: Swept away 0 nets with no fanout.
+logical_block #1(bscan_DRCK) has no fanout.
+Removing input.
+logical_block #3(bscan_RUNTEST) has no fanout.
+Removing input.
+logical_block #8(bscan_TMS) has no fanout.
+Removing input.
+logical_block #13(raspi_gpiox8[7]) has no fanout.
+Removing input.
+Pass 0: Swept away 4 blocks with no fanout.
+Pass 1: Swept away 0 nets with no fanout.
+Pass 1: Swept away 0 blocks with no fanout.
+Swept away 0 nets and 4 blocks in total.
+Removed 0 LUT buffers.
+Sweeped away 4 nodes.
+Successfully created VPR logical netlist from Verific binary DataBase file "C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/DEMO.vdb".
+Netlist pre-processing took 0.707878 seconds.
+	Netlist pre-processing took 0.707 seconds (approximately) in total CPU time.
+Netlist pre-processing virtual memory usage: begin = 10.176 MB, end = 17.332 MB, delta = 7.156 MB
+	Netlist pre-processing peak virtual memory usage = 73.748 MB
+Netlist pre-processing resident set memory usage: begin = 16.708 MB, end = 24.588 MB, delta = 7.88 MB
+	Netlist pre-processing peak resident set memory usage = 55.608 MB
+***** Ending stage netlist pre-processing *****
+***** Beginning stage packing ... *****
+***** Beginning stage pre-packing ... *****
+***** Ending stage pre-packing *****
+Generate proto netlist for file "C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/work_pnr\DEMO.net_proto" took 0.043 seconds
+Creating IO constraints file 'C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/work_pnr\DEMO.io_place'
+Packing took 0.440446 seconds.
+	Packing took 0.44 seconds (approximately) in total CPU time.
+Packing virtual memory usage: begin = 13.032 MB, end = 17.468 MB, delta = 4.436 MB
+	Packing peak virtual memory usage = 73.748 MB
+Packing resident set memory usage: begin = 20.364 MB, end = 24.796 MB, delta = 4.432 MB
+	Packing peak resident set memory usage = 61.588 MB
+***** Ending stage packing *****
+***** Beginning stage packed netlist loading ... *****
+Read proto netlist file C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/work_pnr\DEMO.net_proto
+Read proto netlist for file "C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/work_pnr\DEMO.net_proto" took 0.001 seconds
+Setup net and block data structure took 0.063 seconds
+Packed netlist loading took 0.0854586 seconds.
+	Packed netlist loading took 0.086 seconds (approximately) in total CPU time.
+Packed netlist loading virtual memory usage: begin = 16.068 MB, end = 30.312 MB, delta = 14.244 MB
+	Packed netlist loading peak virtual memory usage = 73.748 MB
+Packed netlist loading resident set memory usage: begin = 22.752 MB, end = 37.004 MB, delta = 14.252 MB
+	Packed netlist loading peak resident set memory usage = 76.072 MB
+***** Ending stage packed netlist loading *****
+***** Beginning stage pre-placement ... *****
+
+***** Ending stage pre-placement *****
+
+No SDC file found.  Using default timing constraint of 1 ns.
+NOTE:  Use --sdc_file <SDC_FILE> to override this behavior.
+
+
+Defaulting to: constrain all 0 inputs and 0 outputs on a virtual external clock;
+	cut paths between netlist clock domains; and
+	optimize all clocks to run as fast as possible.
+***** Beginning stage initial placement ... *****
+Reading core interface constraints from 'C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/outflow/DEMO.interface.csv'.
+Successfully processed interface constraints file "C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/outflow/DEMO.interface.csv".
+Writing IO placement constraints to 'C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/outflow\DEMO.interface.io'.
+
+Reading placement constraints from 'C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/outflow\DEMO.interface.io'.
+WARNING(1): [Line 13] Block bscan_DRCK invalid, no such block.
+WARNING(2): [Line 15] Block bscan_TMS invalid, no such block.
+WARNING(3): [Line 18] Block bscan_RUNTEST invalid, no such block.
+WARNING(4): [Line 33] Block raspi_gpiox8[7] invalid, no such block.
+
+Reading placement constraints from 'C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/work_pnr\DEMO.io_place'.
+WARNING(5): Clock input pad, bscan_TCK, is placed at a GPIO location. Expect extra clock skew
+WARNING(6): Clock driver bscan_TCK should use the dedicated clock pad.
+***** Ending stage initial placement *****
+***** Beginning stage placement ... *****
+memory map at hier_level memory(0)/mem_blk(0)
+mult map at hier_level mult(0)/mult_blk(0)
+Starting Global Placer ...
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL  Delay Max (ps) Convergence
+ ----------     -------  --------------     -------
+          1      198052           10538        11.4%
+          2      273406           10732        12.7%
+          3      260457           11144        13.9%
+          4      298552           10811        14.2%
+          5      419274           10177        14.2%
+          6      404157           10634        16.1%
+          7      280101            9382        20.5%
+          8      143787           10559        38.0%
+          9       43899            9521        48.4%
+         10       31003            9618        55.3%
+         11       29089            8883        61.8%
+         12       30362            8671        62.9%
+         13       30678            9397        62.9%
+         14       31011            9003        63.9%
+         15       30959            9228        64.1%
+         16       31759            8958        64.6%
+         17       32224            8820        66.3%
+         18       32465            9177        68.4%
+         19       33892            9113        68.9%
+         20       35405            8686        68.9%
+         21       34108            9275        71.5%
+         22       35465            9495        72.7%
+         23       36181            8920        73.3%
+         24       35159            9233        73.6%
+         25       30589            9525        74.5%
+         26       30954            9496        75.8%
+         27       31143            8681        76.9%
+         28       32375            8450        78.2%
+         29       31658            9227        78.7%
+         30       33311            8545        79.8%
+         31       33835            9448        79.8%
+         32       34468            8169        81.4%
+         33       34699            8807        81.4%
+         34       34721            8268        81.4%
+         35       35193            8183        82.2%
+         36       35328            8804        82.2%
+         37       34487            8812        83.7%
+         38       34650            9054        84.2%
+         39       34475            9436        85.4%
+         40       35216            9044        86.2%
+Starting Legalization ... 
+Starting Annealer
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL  Delay Max (ps)     R Limit
+ ----------     -------  --------------     -------
+          0       32340            9466        30.0
+          1       20628            9302        30.0
+          2       12852            9047        30.0
+          3       12300            8677        30.0
+          4       11946            8677        30.0
+          5       11660            8188        30.0
+          6       11264            8246        29.5
+          7       11150            8137        29.3
+          8       10953            8137        28.4
+          9       10947            7764        27.7
+         10       10959            7740        26.7
+         11       10719            7682        26.4
+         12       10549            7682        25.2
+         13       10341            7635        24.4
+         14       10434            7635        23.2
+         15       10057            7670        22.6
+         16        9869            7392        21.5
+         17        9692            7355        20.8
+         18        9606            7355        19.8
+         19        9452            7407        19.0
+         20        9285            7407        18.1
+         21        8970            7407        17.2
+         22        8835            7407        16.4
+         23        8617            7404        15.6
+         24        8449            7404        14.7
+         25        8259            7395        13.9
+         26        8157            7386        13.2
+         27        7908            7386        12.6
+         28        7796            7386        11.9
+         29        7699            7386        11.3
+         30        7510            7400        10.8
+         31        7409            7400        10.2
+         32        7352            7400         9.7
+         33        7248            7400         9.2
+         34        7162            7732         8.8
+         35        7101            7732         8.4
+         36        6963            7502         8.0
+         37        6855            7512         7.7
+         38        6827            7502         7.3
+         39        6752            7502         7.0
+         40        6700            7346         6.7
+         41        6585            7346         6.4
+         42        6526            7346         6.1
+         43        6432            7443         5.9
+         44        6406            7311         5.7
+         45        6316            7366         5.4
+         46        6260            7366         5.3
+         47        6216            7401         4.9
+Placement successful: 1109 cells are placed
+Peak congestion smeared over 1/4 of the chip is 0.0896746 at 24,1
+Congestion-weighted HPWL per net: 3.95383
+
+Reading placement constraints from 'C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/outflow/DEMO.qplace'.
+Finish Realign Types (131 blocks need type change)
+
+Completed placement consistency check successfully.
+
+Placement estimated critical path delay: 7.27936 ns
+Successfully created FPGA place file 'C:/Efinity/2019.3/project/demo_led_loop/FPGA_prj/led_loop/outflow/DEMO.place'
+Placement took 6.55852 seconds.
+	Placement took 6.559 seconds (approximately) in total CPU time.
+Placement virtual memory usage: begin = 33.028 MB, end = 42.48 MB, delta = 9.452 MB
+	Placement peak virtual memory usage = 136.7 MB
+Placement resident set memory usage: begin = 39.652 MB, end = 51.164 MB, delta = 11.512 MB
+	Placement peak resident set memory usage = 142.26 MB
+***** Ending stage placement *****

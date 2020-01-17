@@ -1,0 +1,12 @@
+[dumpfile] "F:\efinity_prj\rasp_pi\led_loop\la0_waveform.vcd"
+[dumpfile_mtime] "Fri Dec 06 07:30:31 2019"
+[dumpfile_size] 183
+[savefile] "F:\efinity_prj\rasp_pi\led_loop\la0_waveform.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*0.000000 5120 5120 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[signals_width] 126
+[sst_expanded] 1
+@22
+top.probe0[7:0]

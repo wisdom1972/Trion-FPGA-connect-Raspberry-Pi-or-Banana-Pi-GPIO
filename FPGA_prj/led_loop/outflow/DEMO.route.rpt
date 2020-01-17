@@ -1,0 +1,12 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2019.3.272 
+Date: Fri Jan 03 13:02:43 2020
+
+Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
+ 
+Family: Trion 
+Device: T20F169
+Top-level Entity Name: DEMO
+Elapsed time for routing: 0 hours 0 minutes 4 seconds
+Elapsed time for entire flow: 0 hours 0 minutes 21 seconds

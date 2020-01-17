@@ -1,0 +1,36 @@
+
+# Efinity Interface Configuration
+# Version: 2019.3.272
+# Date: 2020-01-03 13:02
+
+# Copyright (C) 2017 - 2019 Efinix Inc. All rights reserved.
+
+# [required] (input|output|clkout), x, y, z, __bypass__|[~|!]<clock>, [[~|!]<pin_name>] | __vcc__ | __gnd__
+input, 0, 6, 3, __bypass__, bscan_CAPTURE
+input, 0, 2, 3, __bypass__, bscan_DRCK
+input, 0, 4, 3, __bypass__, bscan_RESET
+input, 0, 5, 1, __bypass__, bscan_RUNTEST
+input, 0, 2, 1, __bypass__, bscan_SEL
+input, 0, 5, 3, __bypass__, bscan_SHIFT
+input, 0, 4, 1, __bypass__, bscan_TCK
+input, 0, 3, 1, __bypass__, bscan_TDI
+output, 0, 2, 0, __bypass__, bscan_TDO
+input, 0, 3, 3, __bypass__, bscan_TMS
+input, 0, 6, 1, __bypass__, bscan_UPDATE
+input, 0, 64, 3, __bypass__, butten_i
+output, 160, 132, 0, __bypass__, butten_o
+input, 160, 118, 1, __bypass__, clk
+output, 160, 109, 2, __bypass__, freq_1sec_o
+output, 0, 87, 0, __bypass__, led0_o
+output, 0, 84, 2, __bypass__, led1_o
+input, 158, 243, 3, __bypass__, lock
+input, 160, 24, 3, __bypass__, rasp0_i
+input, 160, 27, 1, __bypass__, rasp1_i
+input, 40, 0, 1, __bypass__, raspi_gpiox8[0]
+input, 58, 0, 1, __bypass__, raspi_gpiox8[1]
+input, 59, 0, 1, __bypass__, raspi_gpiox8[2]
+input, 41, 0, 1, __bypass__, raspi_gpiox8[3]
+input, 52, 0, 1, __bypass__, raspi_gpiox8[4]
+input, 53, 0, 1, __bypass__, raspi_gpiox8[5]
+input, 101, 0, 1, __bypass__, raspi_gpiox8[6]
+input, 160, 9, 3, __bypass__, raspi_gpiox8[7]

@@ -1,0 +1,12 @@
+$date today $end
+$timescale 10 ns $end
+$scope module top $end
+$var wire 8 0 probe0 $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b00000000 0
+$end
+#1023
+b00000000 0

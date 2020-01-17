@@ -1,0 +1,50 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2019.3.272 
+Date: Fri Jan 03 13:02:35 2020
+
+Copyright (C) 2013 - 2019 Efinix Inc. All rights reserved.
+ 
+Family: Trion 
+Device: T20F169
+Top-level Entity Name: DEMO
+
+---------- Resource Summary (begin) ----------
+Inputs: 19 / 487 (3.90%)
+Outputs: 5 / 465 (1.08%)
+Clocks: 2 / 16 (12.50%)
+Logic Elements: 1107 / 19728 (5.61%)
+	LE: LUTs/Adders: 718 / 19728 (3.64%)
+	LE: Registers: 633 / 13920 (4.55%)
+Memory Blocks: 2 / 204 (0.98%)
+Multipliers: 0 / 36 (0.00%)
+---------- Resource Summary (end) ----------
+
+
+---------- Memory Block Information (begin) ----------
+
++-------------------------------------------------------------------------------------+------+------------+-------------+------------+------------+
+|                                        NAME                                         | MODE | READ_WIDTH | WRITE_WIDTH | WRITE_MODE | OUTPUT_REG |
++-------------------------------------------------------------------------------------+------+------------+-------------+------------+------------+
+| edb_top/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__10_5(10) | SDP  |     5      |      5      | READ_FIRST |   false    |
+| edb_top/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__10_3(01) | SDP  |     4      |      4      | READ_FIRST |   false    |
++-------------------------------------------------------------------------------------+------+------------+-------------+------------+------------+
+
+----------- Memory Block Information (end) ----------
+
+Elapsed time for packing: 0 hours 0 minutes 0 seconds
+
+---------- IO Interface Summary (begin) ----------
+
++------------------------+--------------+
+| Missing Interface Pins | Input/Output |
++------------------------+--------------+
+|       bscan_DRCK       |    Input     |
+|       bscan_TMS        |    Input     |
+|     bscan_RUNTEST      |    Input     |
+|    raspi_gpiox8[7]     |    Input     |
++------------------------+--------------+
+
+----------- IO Interface Summary (end) ----------
+
+Elapsed time for placement: 0 hours 0 minutes 6 seconds
