@@ -8,5 +8,7 @@ FPGA development tools:
 Efinity 2019.3 of Windows
 FTDI JTAG Cable
 
+Raspberry Pi3 or Raspberry Pi4 can work both very well
+
 Wisdom Zhang
 Shenzhen
